@@ -8,6 +8,8 @@ import {
 import Constants from 'expo-constants';
 import ListList from '../../components/ListList';
 
+import data from '../../data/data.json'
+
 const styles = StyleSheet.create({
   container: {
     flex: 2,
@@ -38,20 +40,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const DATA = [
-  {
-    id: 1,
-    name: 'Must see!',
-    color: '#ffffff',
-    boardId: 1,
-  },
-  {
-    id: 2,
-    name: 'One-day trips!',
-    color: '#00ff00',
-    boardId: 1,
-  },
-];
+const DATA = data.lists
 
 const List = () => (
   <SafeAreaView style={styles.container}>
